@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kienyeji Plug - Fresh & Dried Vegetables</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container header-flex">
+      <div class="logo-container">
+        <img src="logo.png" alt="Kienyeji Plug Logo" class="logo">
+        <span class="brand-name">Kienyeji Plug</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-sub">100% Organic Foods</span>
+          <h1>Organic Kienyeji Veggies & Foods</h1>
+          <form class="hero-search" onsubmit="return false;">
+            <input type="text" placeholder="Search by keyword" />
+            <button class="search-btn">Submit Now</button>
+          </form>
+        </div>
+        <div class="hero-slider hero-slider-card">
+          <div class="slide active">
+            <img src="https://i0.wp.com/healthwise.co.ke/wp-content/uploads/2024/10/Healthwise-Managu.jpg?w=800&ssl=1" alt="Managu">
+            <div class="caption">Managu</div>
+          </div>
+          <div class="slide">
+            <img src="https://i0.wp.com/healthwise.co.ke/wp-content/uploads/2024/06/Healthwise-Sylvias-Basket-organic-terereamaranth.jpg?fit=800%2C800&ssl=1" alt="Terere">
+            <div class="caption">Terere</div>
+          </div>
+          <div class="slide">
+            <img src="https://s3.eu-west-1.amazonaws.com/s.keekapu.com/keekapu-web-pics/terere-19004B2B-1848-4709-9A5C-25420800685C.jpg" alt="Kunde">
+            <div class="caption">Kunde</div>
+          </div>
+          <button class="slider-btn prev">&#10094;</button>
+          <button class="slider-btn next">&#10095;</button>
+          <div class="slider-dots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight Banners -->
+  <section class="highlights">
+    <div class="container highlights-flex">
+      <div class="highlight-card">
+        <span class="highlight-icon"><i class="fas fa-truck"></i></span>
+        <h4>Free Delivery</h4>
+        <p>Free on order over 3000</p>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-icon"><i class="fas fa-shield-alt"></i></span>
+        <h4>Security Payment</h4>
+        <p>100% security payment</p>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-icon"><i class="fas fa-undo"></i></span>
+        <h4>30 Day Return</h4>
+        <p>30 day money guarantee</p>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-icon"><i class="fas fa-headset"></i></span>
+        <h4>24/7 Support</h4>
+        <p>Support every time fast</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Our Organic Products</h2>
+      <div class="product-grid" id="product-grid">
+        <!-- Products will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>Our Client Saying!</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p>"The freshest managu and terere I've ever had! Delivery was super fast."</p>
+          <span>- Mary W.</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"I love the dried vegetables, so easy to store and cook. Highly recommend!"</p>
+          <span>- John K.</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"Great customer service and the veggies taste just like home."</p>
+          <span>- Grace N.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Phone: <a href="tel:+254712563818">0712 563 818</a> / <a href="tel:+254719346751">0719 346 751</a></p>
+      <p>Location: Jacaranda Gardens, Thika road</p>
+      <a href="#" id="whatsapp-btn" class="whatsapp-btn">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-flex">
+      <div>
+        <strong>Kienyeji Plug</strong><br>
+        Jacaranda Gardens, Thika road<br>
+        <a href="tel:+254712563818">0712 563 818</a> / <a href="tel:+254719346751">0719 346 751</a>
+      </div>
+      <div>
+        <a href="#home">Home</a> |
+        <a href="#products">Products</a> |
+        <a href="#testimonials">Testimonials</a> |
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        &copy; 2025 Kienyeji Plug. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <div id="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
