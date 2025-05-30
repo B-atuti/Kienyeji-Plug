@@ -763,4 +763,29 @@ footer {
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
   }
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #7AB730;
+  box-shadow: 0 0 0 3px rgba(122, 183, 48, 0.1);
+}
+
+.search-input::placeholder {
+  color: #999;
 } 
